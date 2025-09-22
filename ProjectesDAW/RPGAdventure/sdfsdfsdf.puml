@@ -1,0 +1,134 @@
+@startuml
+abstract class idleadventure.Caselles.Casella
+abstract class idleadventure.Monstres.Monstre
+abstract class idleadventure.NPC.NPC
+abstract class idleadventure.Objectes.Objecte
+abstract class idleadventure.Personatges.Personatge
+left to right direction
+annotation java.lang.Override
+class idleadventure.Caselles.caBosc
+class idleadventure.Caselles.caCampFire
+class idleadventure.Caselles.caDerelictHouse
+class idleadventure.Caselles.caHerba
+class idleadventure.Caselles.caMontanya
+class idleadventure.Caselles.caPomers
+class idleadventure.Caselles.caPont
+class idleadventure.Caselles.caTeleport
+class idleadventure.Caselles.caWater
+class idleadventure.IdleAdventure
+class idleadventure.Monstres.Beetle
+class idleadventure.Monstres.Bug
+class idleadventure.Monstres.Spider
+class idleadventure.NPC.PoliceMan
+class idleadventure.NPC.Worker
+class idleadventure.Objectes.ObBox
+class idleadventure.Objectes.ObPal
+class idleadventure.Objectes.ObPen
+class idleadventure.Personatges.GM
+class idleadventure.Personatges.PerMage
+class idleadventure.Personatges.PerNinja
+class idleadventure.Personatges.PerVampire
+class idleadventure.Personatges.PerWarrior
+class idleadventure.Utils.cursorMoves
+class idleadventure.Utils.dryUtils
+class idleadventure.gameManager
+class idleadventure.printScreen
+class java.util.ArrayList
+class java.util.Arrays
+class java.util.Scanner
+
+
+idleadventure.Caselles.Casella ..> idleadventure.Monstres.Monstre
+idleadventure.Caselles.Casella ..> idleadventure.NPC.NPC
+idleadventure.Monstres.Monstre ..> idleadventure.Personatges.Personatge
+idleadventure.NPC.NPC ..> idleadventure.Caselles.Casella
+idleadventure.NPC.NPC ..> idleadventure.Objectes.Objecte
+idleadventure.Personatges.Personatge ..> idleadventure.Objectes.Objecte
+idleadventure.Personatges.Personatge ..> java.util.ArrayList
+idleadventure.Caselles.caBosc --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caBosc ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caCampFire --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caCampFire ..> java.lang.Override
+idleadventure.Caselles.caCampFire ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caCampFire ..> java.util.Arrays
+idleadventure.Caselles.caDerelictHouse --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caDerelictHouse ..> java.lang.Override
+idleadventure.Caselles.caDerelictHouse ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caDerelictHouse ..> java.util.Arrays
+idleadventure.Caselles.caHerba --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caHerba ..> java.lang.Override
+idleadventure.Caselles.caHerba ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caHerba ..> java.util.Arrays
+idleadventure.Caselles.caMontanya --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caPomers --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caPomers ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caPont --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caPont ..> java.lang.Override
+idleadventure.Caselles.caPont ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caPont ..> java.util.Arrays
+idleadventure.Caselles.caTeleport --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caTeleport ..> java.lang.Override
+idleadventure.Caselles.caTeleport ..> idleadventure.Utils.cursorMoves
+idleadventure.Caselles.caTeleport ..> java.util.Arrays
+idleadventure.Caselles.caWater --|> idleadventure.Caselles.Casella
+idleadventure.Caselles.caWater ..> idleadventure.Utils.cursorMoves
+idleadventure.IdleAdventure ..> idleadventure.Caselles.Casella
+idleadventure.IdleAdventure ..> idleadventure.Personatges.Personatge
+idleadventure.IdleAdventure ..> idleadventure.Personatges.GM
+idleadventure.IdleAdventure ..> idleadventure.Personatges.PerMage
+idleadventure.IdleAdventure ..> idleadventure.Personatges.PerNinja
+idleadventure.IdleAdventure ..> idleadventure.Personatges.PerVampire
+idleadventure.IdleAdventure ..> idleadventure.Personatges.PerWarrior
+idleadventure.Monstres.Beetle --|> idleadventure.Monstres.Monstre
+idleadventure.Monstres.Beetle ..> idleadventure.Personatges.Personatge
+idleadventure.Monstres.Beetle ..> java.lang.Override
+idleadventure.Monstres.Beetle ..> idleadventure.Utils.cursorMoves
+idleadventure.Monstres.Bug --|> idleadventure.Monstres.Monstre
+idleadventure.Monstres.Bug ..> idleadventure.Personatges.Personatge
+idleadventure.Monstres.Bug ..> java.lang.Override
+idleadventure.Monstres.Bug ..> idleadventure.Utils.cursorMoves
+idleadventure.Monstres.Spider --|> idleadventure.Monstres.Monstre
+idleadventure.Monstres.Spider ..> idleadventure.Personatges.Personatge
+idleadventure.Monstres.Spider ..> java.lang.Override
+idleadventure.Monstres.Spider ..> idleadventure.Utils.cursorMoves
+idleadventure.NPC.PoliceMan --|> idleadventure.NPC.NPC
+idleadventure.NPC.Worker ..> idleadventure.Caselles.Casella
+idleadventure.NPC.Worker --|> idleadventure.NPC.NPC
+idleadventure.NPC.Worker ..> idleadventure.Objectes.Objecte
+idleadventure.Objectes.ObBox --|> idleadventure.Objectes.Objecte
+idleadventure.Objectes.ObPal --|> idleadventure.Objectes.Objecte
+idleadventure.Objectes.ObPen --|> idleadventure.Objectes.Objecte
+idleadventure.Personatges.GM ..> idleadventure.Objectes.Objecte
+idleadventure.Personatges.GM --|> idleadventure.Personatges.Personatge
+idleadventure.Personatges.GM ..> java.lang.Override
+idleadventure.Personatges.PerMage --|> idleadventure.Personatges.Personatge
+idleadventure.Personatges.PerNinja --|> idleadventure.Personatges.Personatge
+idleadventure.Personatges.PerVampire --|> idleadventure.Personatges.Personatge
+idleadventure.Personatges.PerWarrior --|> idleadventure.Personatges.Personatge
+idleadventure.Utils.dryUtils ..> java.util.Scanner
+idleadventure.gameManager --> idleadventure.Caselles.Casella
+idleadventure.gameManager ..> idleadventure.Personatges.Personatge
+'idleadventure.gameManager ..> idleadventure.Caselles.caBosc
+'idleadventure.gameManager ..> idleadventure.Caselles.caCampFire
+'idleadventure.gameManager ..> idleadventure.Caselles.caDerelictHouse
+'idleadventure.gameManager ..> idleadventure.Caselles.caHerba
+'idleadventure.gameManager ..> idleadventure.Caselles.caMontanya
+'idleadventure.gameManager ..> idleadventure.Caselles.caPomers
+'idleadventure.gameManager ..> idleadventure.Caselles.caPont
+'idleadventure.gameManager ..> idleadventure.Caselles.caTeleport
+'idleadventure.gameManager ..> idleadventure.Caselles.caWater
+'idleadventure.gameManager ..> idleadventure.Monstres.Beetle
+'idleadventure.gameManager ..> idleadventure.Monstres.Spider
+'idleadventure.gameManager ..> idleadventure.NPC.PoliceMan
+'idleadventure.gameManager ..> idleadventure.NPC.Worker
+'idleadventure.gameManager ..> idleadventure.Objectes.ObBox
+'idleadventure.gameManager ..> idleadventure.Objectes.ObPal
+'idleadventure.gameManager ..> idleadventure.Objectes.ObPen
+idleadventure.gameManager ..> idleadventure.Utils.cursorMoves
+idleadventure.gameManager ..> idleadventure.Utils.dryUtils
+idleadventure.gameManager ..> java.util.Scanner
+idleadventure.printScreen ..> idleadventure.Caselles.Casella
+idleadventure.printScreen ..> idleadventure.Objectes.Objecte
+idleadventure.printScreen ..> idleadventure.Personatges.Personatge
+idleadventure.printScreen ..> idleadventure.Utils.cursorMoves
+@enduml

@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/media/borras/M3  Programacio/entorn_grafics/mysql-connector-java-8.0.24.jar"
+    ]
+}
