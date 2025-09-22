@@ -1,3 +1,3 @@
-## testing readme file
+## Java projects
 
-welcome!
+Here are some projects I've been doing while learning Java.
