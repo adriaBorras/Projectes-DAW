@@ -6,8 +6,8 @@ With the use of objects and the help of random we can finally satisfy our gambli
 
 Start of the machine:
 
-![alt text](image.png)
+![alt text primera imatge](img/image.png)
 
 A few spins later:
 
-![alt text](image-1.png)
+![alt text segona imatge](img/image-1.png)
