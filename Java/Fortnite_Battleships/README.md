@@ -1,11 +1,10 @@
 # Fortnite & Battleship Projects
-This project contains the first two games i made while learning java, some details needed to properly finish.
+This project contains the first two games I made while learning java, some details needed to properly finish.
 
 ## Fortnite Zero Build adventure
 
-Small graphic adventure, besides the border colors and the missplacement of the death screen, it's mostly playable (If I remember correctly).
+First weeks into Java, I created a small graphic adventure. It was supposed to be a minor extra assignment, but I discovered ANSI codes, that made coding for terminal fun! So I ended up expanding it… a bit too much.
 
-Just one loop
 
 ---
 Start screenshot:
@@ -18,7 +17,7 @@ Random event ingame:
 
 ## Battleship
 
-Using Functions and arrays
+Practicing functions and arrays
 
 ![alt text](image-3.png)
 

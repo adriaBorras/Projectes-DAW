@@ -2,13 +2,13 @@
 
 This repository will features most of the projects made during lective year.
 
-Work in progress!!
+  🚧 🏗️ 🚧 -- Work in progress!! -- 🚧 🏗️ 🚧
 
-I recommend checking these 3 projects:
+I suggest checking these 3 projects:
 
-HTML/CSS
+HTML/CSS:
 - Window diorama
 
-Projectes-DAW
+Java:
 - RPGAdventure
 - TPV_Fruiteria
